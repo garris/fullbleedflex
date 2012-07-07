@@ -44,7 +44,7 @@
 .addSpacing .fb-50>*,
 .addSpacing .fb-66>*,
 .addSpacing .fb-75>*,
-.addSpacing .fb-100>* {margin-top:1em; margin-bottom: 1em;}
+.addSpacing .fb-100>* {margin-top:1em; margin-bottom: 0em;}
 
 /* ANTI-GUTTER SETTINGS */
 .fullBleed,
@@ -156,7 +156,7 @@
 
 
 /* TABLET PORTRAIT */
-@media screen and (max-width: 900px){
+@media screen and (min-width: 482px) and (max-width: 900px){
 	
 	.row-33{background-image: none;}
 	.row-33 .fb-33{width: 50%;}
