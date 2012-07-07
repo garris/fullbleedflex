@@ -1,0 +1,206 @@
+/*
+	Developed by Garris Shipon with Mijin Cho & Jessica Liang.  JAN 2012.
+	
+	INSPIRED BY AND BASED ON 960 Grid System ~ http://960.gs/
+	and also reset.css ~ http://meyerweb.com/eric/tools/css/reset/
+
+	Licensed under MIT.
+*/
+
+
+/* PRIMARY CONTAINER */
+.fullBleedFlexGrid {width: auto; display: block; margin: 0;} /* min-width: 320px -- conflicts with jQuery mobile when used on ---> data-role="content" (so dont use it there)*/
+
+
+/* FULLBLEED COLUMNS */
+.fb-25,
+.fb-33,
+.fb-50,
+.fb-66,
+.fb-75 {float: left; margin-left: 0px; margin-right: 0px; display: inline; /* fix for IE6 double margin bug */}
+
+
+/* FULLBLEED DEFAULT WIDTHS */
+.fb-25	{width:25%;}
+.fb-33 	{width:33.3%;}
+.fb-50 	{width:50%;}
+.fb-66 	{width:66.6%;}
+.fb-75 	{width:75%;}
+.fb-100	{width:100%;}
+
+
+
+/* GUTTER SETTINGS + Gutters are implemented by madding HORIZONTAL margin to all direct child elements of any fullBleed column */
+.addGutters .fb-25>*,
+.addGutters .fb-33>*,
+.addGutters .fb-50>*,
+.addGutters .fb-66>*,
+.addGutters .fb-75>*,
+.addGutters .fb-100>* {margin-left:1em; margin-right: 1em;}
+
+/* SPACING SETTINGS + SPACING is implemented by madding VERTICAL margin to all direct child elements of any fullBleed column */
+.addSpacing .fb-25>*,
+.addSpacing .fb-33>*,
+.addSpacing .fb-50>*,
+.addSpacing .fb-66>*,
+.addSpacing .fb-75>*,
+.addSpacing .fb-100>* {margin-top:1em; margin-bottom: 1em;}
+
+/* ANTI-GUTTER SETTINGS */
+.fullBleed,
+.fb-25 .fullBleed,
+.fb-33 .fullBleed,
+.fb-50 .fullBleed,
+.fb-66 .fullBleed,
+.fb-75 .fullBleed,
+.fb-100 .fullBleed {margin-left:0px; margin-right:0px;}
+
+
+/* ROWS: break behaiviors */
+.row-100, 
+.row-50, 
+.row-33 {
+	width: 100%;
+	position: relative;
+}
+
+/* ROWS: background behaviors */
+.row-33 {
+	background-image:url(../images/row-33-column.png);
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+ 	background-position: 0 0;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/row-33-column.png',sizingMethod='scale');
+}
+
+
+.row-50 {
+	background-image:url(../images/row-50-column.png);
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-position: 0 0;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/row-50-column.png',sizingMethod='scale');
+}
+
+
+/* CLEARFIX PROPS TO ---> http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.row-100:before,
+.row-100:after,
+.row-50:before,
+.row-50:after,
+.row-33:before,
+.row-33:after{
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.row-50:after,
+.row-33:after {
+	clear: both;
+}
+
+
+
+/* FLOAT HANDLING */
+
+/* http://sonspring.com/journal/clearing-floats */
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* MAD PROPS TO ---> http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+.clearfix:before,
+.clearfix:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* The following zoom:1 rule is specifically for IE6 + IE7. Move to separate stylesheet if invalid CSS is a problem. */
+.clearfix {zoom: 1;}
+
+
+
+
+
+/* ______FLEX MODIFIERS_____ */
+
+
+
+/* WIDE SCREENS */
+@media screen and (min-width: 1200px){
+	
+}
+
+
+/* TABLET PORTRAIT */
+@media screen and (max-width: 900px){
+	
+	.row-33{background-image: none;}
+	.row-33 .fb-33{width: 50%;}
+	.row-33 .fb-33:nth-child(3){clear: left;float: none;margin: 0 auto;display:block;width: 100%;overflow: auto;}
+	
+	/* .fb-33, */
+	.fb-100{width: 100%; clear: left; float: none; display: block;}
+}
+
+
+/* MOBILE PORTRAIT AND LANDSCAPE */
+@media screen and (min-width: 1px) and (max-width: 481px){
+	
+	.fb-25,
+	.fb-33,
+	.fb-50,
+	.fb-66,
+	.fb-75,
+	.fb-100{float: none;}
+	
+	.fb-33,
+	.fb-50,
+	.fb-75,
+	.fb-100,
+	.row-33 .fb-33,
+	.row-50 .fb-50,
+	.fb-75,
+	.fb-100{width: 100%; clear: left; display: block}
+}
+
+
+
+
+
+/* DEFAULTS FOR IE -- IE will not flex-in beyond the widths below */
+.ie6 .fullBleedFlexGrid{
+	margin: 0px auto;
+	width:960px;
+}
+
+.ie7 .fullBleedFlexGrid,
+.ie8 .fullBleedFlexGrid{
+	margin: auto;
+	min-width: 800px;
+}
+
+
