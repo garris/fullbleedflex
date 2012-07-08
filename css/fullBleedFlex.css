@@ -44,7 +44,7 @@
 .addSpacing .fb-50>*,
 .addSpacing .fb-66>*,
 .addSpacing .fb-75>*,
-.addSpacing .fb-100>* {margin-top:1em; margin-bottom: 0em;}
+.addSpacing .fb-100 {margin-top:1em; margin-bottom: 1em;}
 
 /* ANTI-GUTTER SETTINGS */
 .fullBleed,
@@ -90,7 +90,8 @@
 
 
 /* CLEARFIX PROPS TO ---> http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
-
+.fullBleedFlexGrid:before,
+.fullBleedFlexGrid:after,
 .row-100:before,
 .row-100:after,
 .row-50:before,
@@ -170,13 +171,16 @@
 /* MOBILE PORTRAIT AND LANDSCAPE */
 @media screen and (min-width: 1px) and (max-width: 481px){
 	
+	.row-33,
+	.row-50{background-image: none;}
+	
 	.fb-25,
 	.fb-33,
 	.fb-50,
 	.fb-66,
 	.fb-75,
-	.fb-100{float: none;}
-	
+	.fb-100{float:none;overflow: auto;}
+		
 	.fb-33,
 	.fb-50,
 	.fb-75,
@@ -184,7 +188,7 @@
 	.row-33 .fb-33,
 	.row-50 .fb-50,
 	.fb-75,
-	.fb-100{width: 100%; clear: left; display: block}
+	.fb-100{width: 100%; clear: left; display: block;}
 }
 
 
