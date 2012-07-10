@@ -57,15 +57,15 @@
 
 
 /* ROWS: break behaiviors */
-.row-100, 
-.row-50, 
-.row-33 {
+.fb-row-100, 
+.fb-row-50, 
+.fb-row-33 {
 	width: 100%;
 	position: relative;
 }
 
 /* ROWS: background behaviors */
-.row-33 {
+.fb-row-33 {
 	background-image:url(../images/row-33-column.png);
 	background-repeat: no-repeat;
 	background-size:100% 100%;
@@ -77,7 +77,7 @@
 }
 
 
-.row-50 {
+.fb-row-50 {
 	background-image:url(../images/row-50-column.png);
 	background-repeat: no-repeat;
 	background-size:100% 100%;
@@ -92,12 +92,12 @@
 /* CLEARFIX PROPS TO ---> http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
 .fullBleedFlexGrid:before,
 .fullBleedFlexGrid:after,
-.row-100:before,
-.row-100:after,
-.row-50:before,
-.row-50:after,
-.row-33:before,
-.row-33:after{
+.fb-row-100:before,
+.fb-row-100:after,
+.fb-row-50:before,
+.fb-row-50:after,
+.fb-row-33:before,
+.fb-row-33:after{
 	content: '\0020';
 	display: block;
 	overflow: hidden;
@@ -105,8 +105,8 @@
 	width: 0;
 	height: 0;
 }
-.row-50:after,
-.row-33:after {
+.fb-row-50:after,
+.fb-row-33:after {
 	clear: both;
 }
 
@@ -159,9 +159,9 @@
 /* TABLET PORTRAIT */
 @media screen and (min-width: 482px) and (max-width: 900px){
 	
-	.row-33{background-image: none;}
-	.row-33 .fb-33{width: 50%;}
-	.row-33 .fb-33:nth-child(3){clear: left;float: none;margin: 0 auto;display:block;width: 100%;overflow: auto;}
+	.fb-row-33{background-image: none;}
+	.fb-row-33 .fb-33{width: 50%;}
+	.fb-row-33 .fb-33:nth-child(3){clear: left;float: none;margin: 0 auto;display:block;width: 100%;overflow: auto;}
 	
 	/* .fb-33, */
 	.fb-100{width: 100%; clear: left; float: none; display: block;}
@@ -171,8 +171,8 @@
 /* MOBILE PORTRAIT AND LANDSCAPE */
 @media screen and (min-width: 1px) and (max-width: 481px){
 	
-	.row-33,
-	.row-50{background-image: none;}
+	.fb-row-33,
+	.fb-row-50{background-image: none;}
 	
 	.fb-25,
 	.fb-33,
@@ -185,8 +185,8 @@
 	.fb-50,
 	.fb-75,
 	.fb-100,
-	.row-33 .fb-33,
-	.row-50 .fb-50,
+	.fb-row-33 .fb-33,
+	.fb-row-50 .fb-50,
 	.fb-75,
 	.fb-100{width: 100%; clear: left; display: block;}
 }
