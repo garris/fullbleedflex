@@ -58,14 +58,14 @@
 
 /* ROWS: break behaiviors */
 .fb-row-100, 
-.fb-row-50x2, 
-.fb-row-33x3 {
+.fb-row-5050, 
+.fb-row-333333 {
 	width: 100%;
 	position: relative;
 }
 
 /* ROWS: background behaviors */
-.fb-row-33x3 {
+.fb-row-333333 {
 	background-image:url(../images/row-33-column.png);
 	background-repeat: no-repeat;
 	background-size:100% 100%;
@@ -77,7 +77,7 @@
 }
 
 
-.fb-row-50x2 {
+.fb-row-5050 {
 	background-image:url(../images/row-50-column.png);
 	background-repeat: no-repeat;
 	background-size:100% 100%;
@@ -94,10 +94,10 @@
 .fullBleedFlexGrid:after,
 .fb-row-100:before,
 .fb-row-100:after,
-.fb-row-50x2:before,
-.fb-row-50x2:after,
-.fb-row-33x3:before,
-.fb-row-33x3:after{
+.fb-row-5050:before,
+.fb-row-5050:after,
+.fb-row-333333:before,
+.fb-row-333333:after{
 	content: '\0020';
 	display: block;
 	overflow: hidden;
@@ -105,8 +105,8 @@
 	width: 0;
 	height: 0;
 }
-.fb-row-50x2:after,
-.fb-row-33x3:after {
+.fb-row-5050:after,
+.fb-row-333333:after {
 	clear: both;
 }
 
@@ -159,9 +159,9 @@
 /* TABLET PORTRAIT */
 @media screen and (min-width: 482px) and (max-width: 900px){
 	
-	.fb-row-33x3{background-image: none;}
-	.fb-row-33x3 .fb-33{width: 50%;}
-	.fb-row-33x3 .fb-33:nth-child(3){clear: left;float: none;margin: 0 auto;display:block;width: 100%;overflow: auto;}
+	.fb-row-333333{background-image: none;}
+	.fb-row-333333 .fb-33{width: 50%;}
+	.fb-row-333333 .fb-33:nth-child(3){clear: left;float: none;margin: 0 auto;display:block;width: 100%;overflow: auto;}
 	
 	/* .fb-33, */
 	.fb-100{width: 100%; clear: left; float: none; display: block;}
@@ -171,8 +171,8 @@
 /* MOBILE PORTRAIT AND LANDSCAPE */
 @media screen and (min-width: 1px) and (max-width: 481px){
 	
-	.fb-row-33x3,
-	.fb-row-50x2{background-image: none;}
+	.fb-row-333333,
+	.fb-row-5050{background-image: none;}
 	
 	.fb-25,
 	.fb-33,
@@ -185,8 +185,8 @@
 	.fb-50,
 	.fb-75,
 	.fb-100,
-	.fb-row-33x3 .fb-33,
-	.fb-row-50x2 .fb-50,
+	.fb-row-333333 .fb-33,
+	.fb-row-5050 .fb-50,
 	.fb-75,
 	.fb-100{width: 100%; clear: left; display: block;}
 }
