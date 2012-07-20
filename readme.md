@@ -20,13 +20,13 @@
 
     https://github.com/garris/fullbleedflex
 
-### Next, install into your project...
+### Next, install into the header your HTML file...
 
     <link type="text/css" rel="stylesheet" href="css/reset.css"/>
     <link type="text/css" rel="stylesheet" href="css/fullBleedFlex.css"/>
 
 
-### Next try this.   See what happens...
+### and this goes in the body...
 
     <div class="fb-row-333333">
       <div class="fb-33 content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
@@ -39,9 +39,10 @@
       <div class="fb-50 content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
     </div> <!-- row-5050 -->
 
+### Next try this...   Previewing in your browser, see what happens on your laptop as you resize your window, view on your iPad, tablet or phone, rotate your device, stand on head.
 
-What sets fullBleedFlex apart from other CSS frameworks is the optional content margin settings.  The need for content area margin is not always necessary in a gadget based layout so margin widths are optional (akin to the old-school printing term 'full bleed') and can be applied selectively to specific areas of a layout as needed. Common and intuitive rules define how these areas flex depending on available space. Hence the name FullBleedFlex. 
+A big difference between fullBleedFlex and other CSS frameworks is the optional content margin settings.  The need for content area margin is not always necessary in a gadget/widget based layout. With that kind of content it's often best for those layouts to cover the full width & height of the available space -- so in fullBleedFlex margin widths are optional (akin to the old-school printing term 'full bleed') and can be applied selectively to just some, all or none of the areas of a layout as needed. Common and intuitive rules define how these areas flex & reflow depending on available space. Hence the name FullBleedFlex. 
 
 ## Notes:
-* The IE7 & IE8 implementation of fullBleedFlex are locked to the wide (laptop & desktop) view. 
-* This version of fullBleedFlex was refactored for cleaner classnames.  The original was used to build an innovation management application called [ICON](http://icon.spigit.com/ "icon.spigit.com").  If you find any bugs, please report it -- & we will fix it asap.
+* In line with the progressive enhancement doctrine, IE7 & IE8 implementation of fullBleedFlex are locked to the wide (laptop & desktop) view. (They don't support media query).  Our experience is that this constraint works out fine since we don't know of any phones running these browsers.
+* This version of fullBleedFlex was refactored for cleaner classnames.  The original was used to build an innovation management application called [ICON](http://icon.spigit.com/ "icon.spigit.com").  So this version has not seen the same kind of QA as the original.  If you find any bugs, please report it -- & we will fix it or merge your fix asap.
