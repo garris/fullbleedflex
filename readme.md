@@ -39,7 +39,9 @@
       <div class="fb-50 content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
     </div> <!-- row-5050 -->
 
-### Next try this...   Previewing in your browser, see what happens on your laptop as you resize your window, view on your iPad, tablet or phone, rotate your device, stand on head.
+### Next try this...   
+
+Previewing in your browser, see what happens on your laptop as you resize your window, view on your iPad, tablet or phone, rotate your device, stand on head.
 
 A big difference between fullBleedFlex and other CSS frameworks is the optional content margin settings.  The need for content area margin is not always necessary in a gadget/widget based layout. With that kind of content it's often best for those layouts to cover the full width & height of the available space -- so in fullBleedFlex margin widths are optional (akin to the old-school printing term 'full bleed') and can be applied selectively to just some, all or none of the areas of a layout as needed. Common and intuitive rules define how these areas flex & reflow depending on available space. Hence the name FullBleedFlex. 
 
