@@ -43,7 +43,7 @@
 
 Previewing in your browser, see what happens on your laptop as you resize your window, view on your iPad, tablet or phone, rotate your device, stand on your head.
 
-A big difference between fullBleedFlex and other CSS frameworks is the optional content margin settings.  The need for content area margin is not always necessary in a gadget/widget based layout. With that kind of content it's often best for those layouts to cover the full width & height of the available space -- so in fullBleedFlex margin widths are optional (akin to the old-school printing term 'full bleed') and can be applied selectively to just some, all or none of the areas of a layout as needed. Common and intuitive rules define how these areas flex & reflow depending on available space. Hence the name FullBleedFlex. 
+One difference between fullBleedFlex and many common static CSS grid frameworks is the optional content margin settings.  The need for content area margin is not always necessary in a gadget/widget based layout. With that kind of content it's often best for those layouts to cover the full width & height of the available space -- so in fullBleedFlex margin widths are optional (akin to the old-school printing term 'full bleed') and can be applied selectively to just some, all or none of the areas of a layout as needed. Common and intuitive rules define how these areas flex & reflow depending on available space. Hence the name FullBleedFlex. 
 
 ## Notes:
 * In line with the progressive enhancement doctrine, IE7 & IE8 implementation of fullBleedFlex are locked to the wide (laptop & desktop) view. (They don't support media query).  Our experience is that this constraint works out fine since we don't know of any phones running these browsers.
