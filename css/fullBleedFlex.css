@@ -31,6 +31,7 @@
 
 
 /* GUTTER SETTINGS + Gutters are implemented by madding HORIZONTAL margin to all direct child elements of any fullBleed column */
+.addGutters,
 .addGutters .fb-25>*,
 .addGutters .fb-33>*,
 .addGutters .fb-50>*,
@@ -39,6 +40,7 @@
 .addGutters .fb-100>* {margin-left:1em; margin-right: 1em;}
 
 /* SPACING SETTINGS + SPACING is implemented by madding VERTICAL margin to all direct child elements of any fullBleed column */
+.addSpacing,
 .addSpacing .fb-25>*,
 .addSpacing .fb-33>*,
 .addSpacing .fb-50>*,
